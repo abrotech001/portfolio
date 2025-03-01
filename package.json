@@ -1,15 +1,35 @@
 {
-  "name": "my-node-app",
+  "name": "abro-tech-api",
   "version": "1.0.0",
+  "description": "Abro Tech API for ChatGPT-4, file uploads, YouTube downloads, and image enhancement.",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "node --max-old-space-size=4096 main.js"
   },
+  "author": "ABRO TECH",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2",
-    "dotenv": "^16.3.1",
     "axios": "^1.6.2",
-    "express-session": "^1.17.3",
-    "memorystore": "^1.6.7"
+    "body-parser": "^1.20.3",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-session": "^1.18.1",
+    "form-data": "^4.0.0",
+    "formidable": "^3.5.0",
+    "g4f": "^1.4.6",
+    "gpti": "^2.1.7",
+    "memorystore": "^1.6.7",
+    "millify": "^6.1.0",
+    "mime-types": "^2.1.35",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^2.7.0",
+    "paystack-api": "^2.0.6",
+    "rahad-all-downloader": "^2.1.16",
+    "rahad-media-downloader": "^2.1.14",
+    "ruhend-scraper": "^8.0.0",
+    "stream": "^0.0.2",
+    "util": "^0.12.5",
+    "ytdl-core": "^4.11.5"
   }
 }
