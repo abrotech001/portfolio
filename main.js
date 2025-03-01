@@ -32,7 +32,7 @@ app.use(session({
     }
 }));
 
-const SECRET_KEY = process.env.RECAPTCHA_SECRET_KEY || '6Ld9feYqAAAAACwOzX_TCtua02YBABFAQj_dgB7D'; // Use environment variable
+const SECRET_KEY = process.env.RECAPTCHA_SECRET_KEY || '6Lduk-YqAAAAAPzQ7iLgzsunFN9uNbmlS6KodBEn'; // Use environment variable
 
 // Serve the gateway page
 app.get('/gateway', (req, res) => {
