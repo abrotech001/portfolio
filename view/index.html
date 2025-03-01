@@ -2071,36 +2071,41 @@ Combination of coding skills with a passion for design to build functional and v
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
-                        </div>
+                 <form action="https://formspree.io/f/xzzplgpz" method="POST" class="contact__form grid" id="contact-form">
+    <div class="contact__inputs grid">
+        <div class="contact__content">
+            <label for="name" class="contact__label">Name</label>
+            <input type="text" class="contact__input" id="name" name="name" required>
+        </div>
 
-                        <div class="contact__content">
-                            <label for="" class="contact__label">E-mail</label>
-                            <input type="email" class="contact__input">
-                        </div>
-                    </div>
+        <div class="contact__content">
+            <label for="email" class="contact__label">E-mail</label>
+            <input type="email" class="contact__input" id="email" name="email" required>
+        </div>
+    </div>
 
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Subject</label>
-                        <input type="text" class="contact__input">
-                    </div>
+    <div class="contact__content">
+        <label for="subject" class="contact__label">Subject</label>
+        <input type="text" class="contact__input" id="subject" name="subject" required>
+    </div>
 
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Description</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                    </div>
+    <div class="contact__content">
+        <label for="message" class="contact__label">Description</label>
+        <textarea id="message" name="message" cols="0" rows="7" class="contact__input" required></textarea>
+    </div>
 
-                    <div>
-                        <a href="#" class="button button--flex">
-                            Send message
-                            <i class="uil uil-message button__icon"></i>
-                        </a>
-                    </div>
-                </form>
+    <!-- Hidden fields for Formspree customizations -->
+    <input type="hidden" name="_subject" value="New message from your website">
+    <input type="hidden" name="_replyto" value="user-email">
+    <input type="text" name="_gotcha" style="display:none">
+
+    <div>
+        <button type="submit" class="button button--flex">
+            Send Message
+            <i class="uil uil-message button__icon"></i>
+        </button>
+    </div>
+</form>
             </div>
         </section>
     </main>
@@ -2160,6 +2165,8 @@ Combination of coding skills with a passion for design to build functional and v
             window.location.href = '/';
         }
 */
+
+        
         /*==================== MENU SHOW Y HIDDEN ====================*/
         const navMenu = document.getElementById("nav-menu"),
           navToggle = document.getElementById("nav-toggle"),
