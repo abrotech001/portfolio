@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verify You're Human</title>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Ld9feYqAAAAALRmzajjYzzm1wHoJHertHTgRzV1"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lduk-YqAAAAAOngnBiZmyqwX2h_meGep4URGjr6"></script>
     <style>
         body {
             display: flex;
@@ -39,7 +39,7 @@
     <script>
         // Execute reCAPTCHA v3 on page load
         grecaptcha.ready(function() {
-            grecaptcha.execute('6Ld9feYqAAAAALRmzajjYzzm1wHoJHertHTgRzV1', { action: 'verify' }).then(function(token) {
+            grecaptcha.execute('6Lduk-YqAAAAAOngnBiZmyqwX2h_meGep4URGjr6', { action: 'verify' }).then(function(token) {
                 // Send the token to the server for verification
                 fetch('/verify-human', {
                     method: 'POST',
