@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: my-node-app
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    env: node
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 8000
+      - key: SESSION_SECRET
+        value: your_session_secret
+      - key: RECAPTCHA_SECRET_KEY
+        value: your_recaptcha_secret_key
+    plan: free # Use "starter" or "standard" for paid plans
+    region: ohio # Choose a region closest to your users
+    healthCheckPath: / # Health check endpoint
+    autoDeploy: true # Automatically deploy on Git push
+    branch: main # Git branch to deploy from
+    staticAssets:
+      - path: view # Serve static files from the "view" directory
